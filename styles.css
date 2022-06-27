@@ -1,0 +1,151 @@
+/*CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+.nav-link{
+    color: #00fbff;
+}
+
+
+.navbar i{
+    font-size: 30px;
+    color: #dc3545;
+}
+
+
+.container{
+    color: grey;
+}
+
+
+#home{
+    background-color: aqua;
+    padding: 15%;
+ background-image: url(./Images/city-5974876_1920.jpg);
+    background-attachment: fixed;
+    background-position: 1px;
+    display: flex;
+    flex: wrap;
+}
+
+
+#title-name{
+  
+
+    
+}
+
+
+ul {
+    list-style-type: none;
+  };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+#footer{
+    background-color: #2D0800;
+    padding: 5px;
+}
+
+
+.up-arrow{color: white  ;
+    position: sticky;
+
+}
+
+
+.fa-brands{
+    color: #dc3545;
+}
+
+
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.1rem 0 0;
+}
+
+.socials li{
+    margin: 0 17px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: white;
+}
+
+.socials a i{
+    font-size: 6rem;
+    transition: color .4s ease;
+    border: black;
+}
+
+.socials a:hover{
+    color: #00fbff;
+}
+
+  /* Icon hover FX */
+ /* .fa-facebook:hover{
+    color:rgb(66, 13, 13)  !important;
+    opacity: unset;
+ }
+
+ .fa-linkedin-in:hover{
+    color:rgb(66, 13, 13)  !important;
+    opacity: unset;
+ }
+
+ .fa-google-plus-g:hover{
+    color: rgb(66, 13, 13)  !important;
+    opacity: unset;
+ }
+
+ .fa-github:hover{
+    color:rgb(66, 13, 13) !important;
+    opacity: unset;
+ }
+
+ .fa-google:hover{
+    color:rgb(66, 13, 13) !important;
+    opacity: unset;
+ }
+
+
+ 
+ .fa-map-marker:hover{
+    color:rgb(66, 13, 13) !important;
+    opacity: unset;
+ }
+
+
+.fa-heart{
+    color: red;
+}
+
+ */
