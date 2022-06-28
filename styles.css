@@ -22,13 +22,15 @@
     color: grey;
 }
 
+body {overflow-x: hidden;}
+
 
 #home{
     background-color: aqua;
     padding: 15%;
- background-image: url(./Images/wood-1755730_1920.jpg);
+ background-image: url(./Images/building-1615165_1920.jpg);
     background-attachment: fixed;
-    background-position: 1px;
+    background-position: 50px;
     display: flex;
     flex: wrap;
 }
@@ -45,9 +47,17 @@ ul {
     list-style-type: none;
   };
 
+#container1{
+    box-sizing: content-box;  
+    width: 300px;
+    height: 100px;
+    padding: 30px;  
+    border: 10px solid blue;
+}
 
-
-
+#properties{
+    background-color: black;
+}
 
 
 
