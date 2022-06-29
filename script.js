@@ -5,7 +5,7 @@ $('#myModal').on('shown.bs.modal', function () {
   })
 
 
-// 
+
 let properties = [{
     id: "1",
     image: "https://i.postimg.cc/W1grGtXk/house-1836070-1920.jpg",
@@ -143,32 +143,7 @@ function showProperties() {
 
 
 
-  function sortList() {
-    let list, i, switching, b, shouldSwitch;
-    list = document.getElementById("ul-list");
-    switching = true;
-    while (switching) {
-      switching = false;
-      b = list.getElementsByTagName("LI");
-      for (i = 0; i < b.length - 1; i++) {
-        shouldSwitch = false;
-        if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
-          shouldSwitch = true;
-          break;
-        }
-      }
-      if (shouldSwitch) {
-        b[i].parentNode.insertBefore(b[i + 1], b[i]);
-        switching = true;
-      }
-    }
-  }
-
-
-
-
-
-
+  
 
 
 
