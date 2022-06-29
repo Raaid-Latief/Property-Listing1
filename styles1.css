@@ -14,7 +14,11 @@ p.outset {border-style: outset;}
 body {overflow-x: hidden;}
 
 .title{
-    
+
+}
+
+body{
+    background-color: grey;
 }
 
 
@@ -23,3 +27,24 @@ body {overflow-x: hidden;}
     border: 8px;
 
 }
+
+
+
+
+/* buttons */
+
+.button {
+
+	
+  	padding: 2px;
+  	border: none;
+  	opacity: 10.5
+  
+}
+
+.button:hover{
+  background-color: white;
+  opacity: 1;
+}
+
+

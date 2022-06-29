@@ -1,11 +1,3 @@
-// Modal
-
-$('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
-  })
-
-
-// 
 let properties = [{
     id: "1",
     image: "https://i.postimg.cc/W1grGtXk/house-1836070-1920.jpg",
@@ -98,41 +90,47 @@ let properties = [{
 }];
 
 
+
+
 const forSaleContainer = document.getElementById("boxes");
 
 function showProperties() {
     forSaleContainer.innerHTML = "";
     properties.forEach((property) => {
         forSaleContainer.innerHTML += `
-            <div class="card rounded-2 col-md-4">
-              <img
-                src=${property.image}
-                class="card-img-top"
-                alt="Image of ${property.title}"
-              />
-              <div class="card-body">
-                <div class="card-text">
-                  <h3 id="title">${property.title}</h3>
-                  <h4 id="location" class="text-muted">
-                    <i class="fa-solid fa-location-dot me-1" title="Location of property"></i>
-                    ${property.location}
-                  </h4>
-                  <div id="type" class="d-flex align-items-baseline">
-                  <i class="fa-solid fa-house me-1" title="Type of Property"></i>
-                    <p id="typeOutput">${property.type}</p>
-                  </div>
-                 
-                  <div id="sqFt" class="d-flex align-items-baseline">
-                  <i class="fa-solid fa-ruler me-1" title="Square Feet"></i>
-                    <p id="sqFtOutput">${property.sqFeet}</p>
-                  </div>
-                  <div id="price" class="d-flex align-items-baseline">
-                    <i class="fa-solid fa-coins me-1" title="Price"></i>
-                    <p id="priceOutput">${property.price}</p>
-                  </div>
+        <div class="container">
+        <div>
+        <p class="outset py-3">
+            <div class="row">
+                <div class="col-lg-2">
+                    <h4>${property.id}</h4>
                 </div>
-              </div>
+                <div class="col-lg-2">
+                    <h4>${property.title}</h4>
+                </div>
+                <div class="col-lg-2">
+                    <h4>${property.type}</h4>
+                </div>
+                <div class="col-lg-2">
+                    <h4> ${property.location}</h4>
+                </div>
+                <div class="col-lg-2">
+                    <h2>${property.sqFeet}</h2>
+                </div>
+                <div class="col-lg-2">
+                <div class="row">
+                <h2 class="col-lg-6">
+                <button class="button"><i class="fa-solid fa-pen-to-square"></i></button>
+                </h2>
+                <h2 class="col-lg-6">
+                   <button class="button"><i class="fa-solid fa-trash"></i></button>
+                </h2>
             </div>
+            </div>
+            </div>
+        </p>
+    </div>
+    </div>
             `;
       
     })
@@ -140,36 +138,3 @@ function showProperties() {
 
   showProperties
   ();
-
-
-
-  function sortList() {
-    let list, i, switching, b, shouldSwitch;
-    list = document.getElementById("ul-list");
-    switching = true;
-    while (switching) {
-      switching = false;
-      b = list.getElementsByTagName("LI");
-      for (i = 0; i < b.length - 1; i++) {
-        shouldSwitch = false;
-        if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
-          shouldSwitch = true;
-          break;
-        }
-      }
-      if (shouldSwitch) {
-        b[i].parentNode.insertBefore(b[i + 1], b[i]);
-        switching = true;
-      }
-    }
-  }
-
-
-
-
-
-
-
-
-
-
