@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/38d98b9057.js" crossorigin="anonymous"></script>
+    <title>Property Listing</title>
 </head>
 <body>
 
@@ -27,43 +27,50 @@
 
     <!-- Search Bar to filter properties -->
 
-    <section id="filterBy">
-      <div class="row text-center p-3">
-      <div class="dropdown show col-lg-4">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-      
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </div>
-      <div class="dropdown show col-lg-4">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-      
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </div>
-      <div class="dropdown show col-lg-4">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-      
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </div>
-      <div class="p-3"><button type="button" class="btn btn-primary btn-lg">Search</button></div>
+ <section id="filterBy" class="p-5">
+
+<div id="rcorners2">
+
+  <div>
+    <H5 class="text-center py-2">Search anything</H5>
+  </div>
+
+  <div class="row" id="search">
+		<form id="search-form" class="row" action="" method="POST" enctype="multipart/form-data">
+			<div class="form-group col-md-8">
+				<input class="form-control" type="text" placeholder="Search" />
+			</div>
+      <div class="form-group col-md-4">
+				<button type="submit" class="btn btn-block btn-primary">Search</button>
+			</div>
+		</form>
+</div>
+
+<div class="row mt-2" id="filter">
+  <form class="row">
+    <div class="form-group col-lg-4 col-sm-3 col-xs-6">
+      <select data-filter="make" class="filter-make filter form-control">
+        <option value="">Select Make</option>
+        <option value="">Show All</option>
+      </select>
     </div>
+    <div class="form-group col-lg-4 col-sm-3 col-xs-6">
+      <select data-filter="make" class="filter-make filter form-control">
+        <option value="">Select Make</option>
+        <option value="">Show All</option>
+      </select>
+    </div>
+    <div class="form-group col-lg-4
+    col-sm-3 col-xs-6">
+      <select data-filter="make" class="filter-make filter form-control">
+        <option value="">Select Make</option>
+        <option value="">Show All</option>
+      </select>
+    </div>
+
+
+</div>
+     
 
     </section>
 
@@ -188,6 +195,8 @@
 </section> -->
 
 <!-- <section id="properties" class="container" data-aos-offset="500">
+
+
   <h2 id="title-name" class="mt-5 mb-5 text-center">Discover our property listings</h2>
   <div class="property-container">
     <div class="card shadow mb-4">
@@ -238,6 +247,8 @@
   </div>
       </section> -->
   
+
+ <section id="boxes" class="d-flex justify-content-center row"></section>
 
 
 
@@ -294,6 +305,10 @@
     </div>
 </section>
 <!--End of Footer-->
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+p.outset {border-style: outset;}
+
+
+
+body {overflow-x: hidden;}
+
+.title{
+    
+}
+
+
+.container{
+    border: double;
+    border: 8px;
+
+}
