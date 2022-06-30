@@ -115,7 +115,7 @@ function showProperties() {
                     <h4> ${property.location}</h4>
                 </div>
                 <div class="col-lg-2">
-                    <h2>${property.sqFeet}</h2>
+                    <h4>${property.sqFeet}</h4>
                 </div>
                 <div class="col-lg-2">
                 <div class="row">

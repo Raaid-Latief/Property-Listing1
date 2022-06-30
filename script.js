@@ -1,10 +1,3 @@
-// Modal
-
-$('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
-  })
-
-
 
 let properties = [{
     id: "1",
@@ -50,7 +43,7 @@ let properties = [{
     id: "5",
     image: "https://i.postimg.cc/TPjV6hb6/house-1477041-1280.jpg",
     title: "Influencer Mansion",
-    type: "House",
+    type: "Mansion",
     location: "Claremont",
     price: "R21 000 pm",
     sqFeet: "4890 sqFt",
@@ -59,10 +52,10 @@ let properties = [{
 {
     id: "6",
     image: "https://i.postimg.cc/PxrwnyhW/house-1867187-1920.jpg",
-    title: "Double Story Beachhouse",
+    title: "Family House",
     type: "House",
-    location: "Strand",
-    price: "18 000 pm",
+    location: "Claremont",
+    price: "15 000 pm",
     sqFeet: "4000 sqFt",
   
 },
@@ -141,6 +134,10 @@ function showProperties() {
   showProperties
   ();
 
+
+
+
+  
 
 
   
