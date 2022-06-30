@@ -88,7 +88,37 @@ let properties = [{
     price: "R13 000 pm",
     sqFeet: "2800 sqFt",
 
-}];
+},
+{
+  id: "10",
+  image: "https://i.postimg.cc/13vT3BR4/abbilyn-zavgorodniaia-u-OYak90r4-L0-unsplash.jpg",
+  title: "Hobbit House",
+  type: "Cottage",
+  location: "Claremont",
+  price: "R16 000 pm",
+  sqFeet: "2970 sqFt",
+
+},
+{
+  id: "11",
+  image: "https://i.postimg.cc/D01HfKmK/stephen-leonardi-XKIO6-Zg-CObo-unsplash.jpg",
+  title: "Mountain Mansion",
+  type: "Mansion",
+  location: "Tokai",
+  price: "R21 000 pm",
+  sqFeet: "4450 sqFt",
+
+},
+{
+  id: "12",
+  image: "https://i.postimg.cc/j2N0W7gm/webaliser-TPTXZd9m-Oo-unsplash.jpg",
+  title: "City Mansion",
+  type: "Mansion",
+  location: "CBD",
+  price: "R18 000 pm",
+  sqFeet: "3840 sqFt",
+
+},];
 
 
 const forSaleContainer = document.getElementById("boxes");
@@ -137,7 +167,7 @@ function showProperties() {
 
 
 
-  
+
 
 
   
