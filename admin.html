@@ -15,118 +15,33 @@
             <div class="row">
             <h1 class="title col-lg-6">Products</h1>
             <div class="col-lg-6">
-                <div class="container-modal">
-                    
-                    <div class="button1">
-                    <!-- Trigger the modal with a button -->
-                    <button type="button" class="btn-modal btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#myModal">+ Add New</button>
-                </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="myModal" role="dialog">
-                      <div class="modal-dialog">
-                      
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                          <div class="modal-header">
-                           
-                            <h4 class="modal-title text-center">Add a new listing</h4>
-                          </div>
-
-                          <div class="modal-body">
-                           <div class="row">
-
-                            <div class="form-group col-lg-12 col-sm-3 col-xs-6">
-                                <h5>Add an image</h5>
-                                <input type="text" name="image" id="image" placeholder="add Title...">
-                              </div>
-                        
-                              <div class="form-group col-lg-12 col-sm-3 col-xs-6">
-                                <h5>Add an title</h5>
-                                <input type="text" name="title" id="title" placeholder="add Title...">
-                              </div>
-<!-- <div class="form-group col-lg-12 col-sm-3 col-xs-6">
-    <h5>Choose a dwelling type</h5>
-    
-    <select data-filter="make" class="filter-make filter form-control">
-    <option value="">^</option>
-      <option value="">Apartment</option>
-      <option value="">Cottage</option>
-      <option value="">House</option>
-      <option value="">Mansion</option>
-    </select>
-  </div> -->
-  <div class="form-group col-lg-12 col-sm-3 col-xs-6">
-    <h5>Add type of dwelling</h5>
-    <input type="text" name="type" id="type" placeholder="add Title...">
-  </div>
-
-  <div class="form-group col-lg-12 col-sm-3 col-xs-6">
-    <h5>Location</h5>
-    <input type="text" name="location" id="location" placeholder="add image...">
-  </div>
-
-  <!-- <div class="form-group col-lg-12 col-sm-3 col-xs-6">
-    <h5>Choose a Location</h5>
-    
-    <select data-filter="make" class="filter-make filter form-control">
-    <option value="">^</option>
-    <option value="">CBD</option>
-      <option value="">Claremont</option>
-      <option value="">Crawford</option>
-      <option value="">Strand</option>
-      <option value="">Tokai</option>
-    </select>
-  </div> -->
-  
-
-  <div class="form-group col-lg-12 col-sm-3 col-xs-6">
-    <h5>Add price</h5>
-    <input type="text" name="price" id="price" placeholder="add price...">
-  </div>
-
-</div>
-
-<h5>Add the size</h5>
-<input type="text" name="size" id="size" placeholder="Size (sqFt)...">
+                
+                
 
 
-
-<button type="button" class="btn btn-default" onclick="addProperty()">Add Property</button>
-
-                           </div>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>   
-                      </div>
-                    </div> 
-                  </div>    
-            </div>
-        </div>
 <!-- Table Headings -->
             <div>
                 <p class="outset py-3">
                 <div class="row">
-                    <div class="col-lg-1">
+                    <div class="col-lg-2">
                         <h3>Id</h3>
                     </div>
-                    <div class="col-lg-1">
+                    <div class="col-lg-2">
                         <h3>Image</h3>
                     </div>
-                    <div class="col-lg-1">
+                    <div class="col-lg-2">
                         <h3>Title</h3>
                     </div>
-                    <div class="col-lg-1">
+                    <div class="col-lg-2">
                         <h3>Category</h3>
                     </div>
-                    <div class="col-lg-1">
+                    <div class="col-lg-2">
                         <h3>Location</h3>
                     </div>
                     <div class="col-lg-1">
                         <h3>Price</h3>
                     </div>
-                    <div class="col-lg-1>
+                    <div class="col-lg-1">
                         <h3>Size</h3>
                     </div>
                     <div class="col-lg-5">
@@ -142,6 +57,74 @@
     <section id="table">
  <div id="boxes" class="d-flex justify-content-center row"></div>
 </section>
+
+
+<div class="container-modal">
+                    
+    <div class="button1">
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn-modal btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#myModal">+ Add New</button>
+</div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+           
+            <h4 class="modal-title text-center">Add a new listing</h4>
+          </div>
+
+          <div class="modal-body">
+           <div class="row">
+
+            <div class="form-group col-lg-12 col-sm-3 col-xs-6">
+                <h5>Add an image</h5>
+                <input type="text" name="image" id="image" placeholder="add Title...">
+              </div>
+        
+              <div class="form-group col-lg-12 col-sm-3 col-xs-6">
+                <h5>Add an title</h5>
+                <input type="text" name="title" id="title" placeholder="add Title...">
+              </div>
+
+
+<div class="form-group col-lg-12 col-sm-3 col-xs-6">
+<h5>Add type of dwelling</h5>
+<input type="text" name="type" id="type" placeholder="add Title...">
+</div>
+
+<div class="form-group col-lg-12 col-sm-3 col-xs-6">
+<h5>Location</h5>
+<input type="text" name="location" id="location" placeholder="add image...">
+</div>
+
+<div class="form-group col-lg-12 col-sm-3 col-xs-6">
+<h5>Add price</h5>
+<input type="text" name="price" id="price" placeholder="add price...">
+</div>
+
+</div>
+
+<h5>Add the size</h5>
+<input type="text" name="size" id="size" placeholder="Size (sqFt)...">
+
+
+
+<button type="button" class="btn btn-default" onclick="addProperty()">Add Property</button>
+
+           </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>   
+      </div>
+    </div> 
+  </div>    
+</div>
+</div>
 
 
   

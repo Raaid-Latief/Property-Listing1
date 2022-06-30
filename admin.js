@@ -134,19 +134,19 @@ function showProperties() {
         <div>
         <p class="outset py-3">
             <div class="row">
-                <div class="col-lg-1" >
+                <div class="col-lg-2" >
                     <h4>${property.id}</h4>
                 </div>
-                <div class="col-lg-1" >
+                <div class="col-lg-2" >
                     <img>${property.image}</img>
                 </div>
-                <div class="col-lg-1">
+                <div class="col-lg-2">
                     <h4>${property.title}</h4>
                 </div>
-                <div class="col-lg-1">
+                <div class="col-lg-2">
                     <h4>${property.type}</h4>
                 </div>
-                <div class="col-lg-1">
+                <div class="col-lg-2">
                     <h4> ${property.location}</h4>
                 </div>
                 <div class="col-lg-1">
@@ -158,7 +158,76 @@ function showProperties() {
                 <div class="col-lg-5">
                 <div class="row">
                 <h2 class="col-lg-6">
-                <button class="button"><i class="fa-solid fa-pen-to-square"></i></button>
+
+                 
+                <div class="container-modal">
+                                    
+                    <div class="button1">
+                    <!-- Trigger the modal with a button -->
+                    <button  onclick="editProperty" class="btn-modal btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#myModal">
+               <i class="fa-solid fa-pen-to-square"></i></button>
+                </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                      <div class="modal-dialog">
+                      
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                           
+                            <h4 class="modal-title text-center">Add a new listing</h4>
+                          </div>
+                
+                          <div class="modal-body">
+                           <div class="row">
+                
+                            <div class="form-group col-lg-12 col-sm-3 col-xs-6">
+                                <h5>Add an image</h5>
+                                <input type="text" name="image" id="image" placeholder="add Title...">
+                              </div>
+                        
+                              <div class="form-group col-lg-12 col-sm-3 col-xs-6">
+                                <h5>Add an title</h5>
+                                <input type="text" name="title" id="title" placeholder="add Title...">
+                              </div>
+                
+                
+                <div class="form-group col-lg-12 col-sm-3 col-xs-6">
+                <h5>Add type of dwelling</h5>
+                <input type="text" name="type" id="type" placeholder="add Title...">
+                </div>
+                
+                <div class="form-group col-lg-12 col-sm-3 col-xs-6">
+                <h5>Location</h5>
+                <input type="text" name="location" id="location" placeholder="add image...">
+                </div>
+                
+                <div class="form-group col-lg-12 col-sm-3 col-xs-6">
+                <h5>Add price</h5>
+                <input type="text" name="price" id="price" placeholder="add price...">
+                </div>
+                
+                </div>
+                
+                <h5>Add the size</h5>
+                <input type="text" name="size" id="size" placeholder="Size (sqFt)...">
+                
+                
+                
+                <button type="button" class="btn" onclick="editProperty(${index})">edit Property</button>
+                
+                           </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>   
+                      </div>
+                    </div> 
+                  </div>    
+                </div>
+                </div>
+               
                 </h2>
                 <h2 class="col-lg-6">
                    <button class="button" onclick="deleteProperty(${index})"><i class="fa-solid fa-trash"></i></button>
@@ -201,6 +270,23 @@ function addProperty(){
 function deleteProperty(id) {
     if(id > -1) {
         properties.splice(id, 1);
+    }
+    localStorage.setItem('property', JSON.stringify(properties));
+    showProperties();
+}
+// edit function
+function editPropert(id) {
+    if(id > -1) {
+      let updatevalue = {
+        id: properties.length + 1,
+        image: document.querySelector('#image').value,
+        title: document.querySelector('#title').value,
+        type:  document.querySelector('#type').value,
+        location:  document.querySelector('#location').value,
+        price:  document.querySelector('#price').value,
+        sqFeet:  document.querySelector('#size').value,
+    }
+        properties.splice(id, 1, updatevalue);
     }
     localStorage.setItem('property', JSON.stringify(properties));
     showProperties();
